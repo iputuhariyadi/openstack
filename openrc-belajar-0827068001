@@ -1,0 +1,16 @@
+## Common OpenStack environment variables
+export OS_AUTH_URL=http://192.168.56.56:5000/v3
+export OS_PROJECT_DOMAIN_NAME=default
+export OS_USER_DOMAIN_NAME=default
+export OS_USERNAME=0827068001
+export OS_PASSWORD=12345678
+export OS_PROJECT_NAME=belajar-0827068001
+
+## Some older clients may be expecting this.
+export OS_TENANT_NAME=belajar-0827068001
+
+## Tells python-openstackclient to use Keystone v3 API.
+export OS_IDENTITY_API_VERSION=3
+
+## Tells python-swiftclient to use Keystone v3 API.
+export OS_AUTH_VERSION=3

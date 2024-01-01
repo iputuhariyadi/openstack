@@ -1,0 +1,1 @@
+BASH Shell Script untuk memanajemen sumber daya OpenStack meliputi pembuatan dan penghapusan project, user, user role, provider network, provider subnet, router, internal network, unduh image cirros dari Internet, security group, security group rule hingga instance.

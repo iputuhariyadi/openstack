@@ -3,6 +3,16 @@
 # Untuk mendukung praktikum pada matakuliah Cloud Computing terkait
 # otomatisasi manajemen sumber daya di OpenStack
 
+# Mengecek apakah package jq (json query) telah terinstalasi atau belum
+# Jika belum maka dilakukan instalasi package jq
+if [ $(dpkg -l | awk "/$1/ {print }"|wc -l) -ge 1 ]; then
+        echo "Package jq telah terinstalasi di OpenStack!"
+else
+        echo "Melakukan instalasi package jq di OpenStack!"
+        sudo apt update
+        sudo apt -y install jq
+fi
+
 # Mendeklarasikan variable untuk pembuatan project, user dan role
 PROJECT_PREFIX="belajar"
 USERNAME="0827068001"
